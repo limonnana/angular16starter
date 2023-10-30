@@ -7,6 +7,15 @@ export class Menu {
       separator: false,
       items: [
         {
+          icon: 'assets/icons/outline/cog.svg',
+          label: 'Stocks',
+          children: [
+          { label: 'New Stock', route: '/stock/new-stock' }, 
+          { label: 'IL', route: '/stock/il' },     
+          { label: 'US', route: '/stock/us' },
+          ],
+        },
+        {
           icon: 'assets/icons/outline/chart-pie.svg',
           label: 'Dashboard',
           route: '/dashboard',
@@ -42,8 +51,11 @@ export class Menu {
         },
         {
           icon: 'assets/icons/outline/users.svg',
-          label: 'Users',
-          route: '/users',
+          label: 'Users', 
+          children: [
+            { label: 'All Users', route: '/user/users' },
+            { label: 'New User', route: '/user/new-user'},
+          ],
         },
       ],
     },

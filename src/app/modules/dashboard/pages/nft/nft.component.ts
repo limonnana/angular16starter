@@ -12,7 +12,7 @@ export class NftComponent implements OnInit {
     this.nft = [
       {
         id: 34356771,
-        title: 'Girls of the Cartoon Universe',
+        title: 'Wooden Path',
         creator: 'Jhon Doe',
         instant_price: 4.2,
         price: 187.47,

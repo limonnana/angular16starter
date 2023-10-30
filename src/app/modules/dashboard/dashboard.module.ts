@@ -16,6 +16,7 @@ import { NftHeaderComponent } from './components/nft/nft-header/nft-header.compo
 import { NftAuctionsTableComponent } from './components/nft/nft-auctions-table/nft-auctions-table.component';
 import { NftAuctionsTableItemComponent } from './components/nft/nft-auctions-table-item/nft-auctions-table-item.component';
 
+
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -26,6 +27,7 @@ import { NftAuctionsTableItemComponent } from './components/nft/nft-auctions-tab
     NftHeaderComponent,
     NftAuctionsTableComponent,
     NftAuctionsTableItemComponent,
+    
   ],
   imports: [
     CommonModule,
