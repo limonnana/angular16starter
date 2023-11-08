@@ -12,7 +12,15 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   create(user: IUser): Observable<IUser> {
-    return this.http.post<IUser>(this.resourceUrl, user);
+    console.log('url:' + this.resourceUrl + '/register');
+    return this.http.post<any>(this.resourceUrl + '/register', user);
+  }
+
+  test(user: IUser):Observable<any> {
+    console.log('url:' + this.resourceUrl + '/hola');
+    console.log('saludo: ' + user.password);
+    let saludo= 'Hola como estas'
+  return this.http.post<any>(this.resourceUrl + '/hola', saludo);
   }
 
   update(user: IUser): Observable<IUser> {

@@ -80,7 +80,8 @@
               "browserTarget": "angular-tailwind:build:production"
             },
             "development": {
-              "browserTarget": "angular-tailwind:build:development"
+              "browserTarget": "angular-tailwind:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
